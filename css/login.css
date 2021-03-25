@@ -52,7 +52,7 @@
 .login-box .login-rg .logos p{
 	text-align: center;
 	font-size: 14px;
-	color:#4c0d7f
+	color:#208135
 }
 .login-box .login-rg .form{
 	margin-top: 10px;
@@ -115,10 +115,10 @@
 	font-size: 12px;
 }
 .login-box .login-rg .form .eqs a:hover{
-	color: #4c0d7f;
+	color: #208135;
 }
 .login-box .login-rg .form .eqs a.rule{
-	color: #4c0d7f;
+	color: #208135;
 }
 .login-box .login-rg .form .eqs a.forget{
 	float: right;
@@ -204,14 +204,14 @@
 }
 .teac-login .login-card .login-card-rg h2{
 	font-size: 28px;
-	background: linear-gradient(to right, #4c0d7f, #6480d9);
+	background: linear-gradient(to right, #208135, #6480d9);
 	-webkit-background-clip: text;
 	color: transparent;
 	line-height: inherit;
 }
 .teac-login .login-card .login-card-rg h3{
 	font-size: 14px;
-	color:#4c0d7f;
+	color:#208135;
 	margin-bottom: 30px;
 }
 .input-login{

@@ -101,7 +101,7 @@ ul,li{
 	color:#333;
 }
 #h_menu ul.mainlist li:hover,#h_menu ul.mainlist li:hover:before{
-	color:#4c0d7f !important
+	color:#208135 !important
 }
 #h_menu ul.mainlist li span.icon{
 	color:#999;
@@ -150,16 +150,16 @@ ul,li{
 	background: #666;
 }
 #h_menu ul.mainlist li ul li a.bluefont:before{
-	background: #4c0d7f;
+	background: #208135;
 }
 #h_menu ul.mainlist li ul li a:hover{
-	color:#4c0d7f;
+	color:#208135;
 }
 #h_menu ul.mainlist li ul li a:hover:before{
-	background: #4c0d7f;
+	background: #208135;
 }
 #h_menu ul.mainlist li ul li a:hover .icon{
-	color:#4c0d7f;
+	color:#208135;
 	}
 #h_main .main_con{
 	padding: 17px 30px 0 30px;
@@ -206,7 +206,7 @@ ul,li{
 .h_tit{
 	hieght:38px;
 	line-height:38px;
-	color:#4c0d7f;
+	color:#208135;
 	font-size:14px;
 	border-bottom: 1px solid #ebeef5;
 }

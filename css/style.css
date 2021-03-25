@@ -10,7 +10,7 @@ Import fonts
 ***/
 
 /*** load open sans font from Google Fonts
-@import url(../../fonts.googleapis.com/css¿family=Open+Sans_400,300,600,700.css);
+@import url(../../fonts.googleapis.com/cssï¿½family=Open+Sans_400,300,600,700.css);
 ***/
 
 /* load open sans font from local */
@@ -460,7 +460,7 @@ Header and header elements.
 	z-index: 999;
 	position: relative;
 	/*box-shadow: 0 1px 3px #ddd;	*/
-	background: #4c0d7f;
+	background: #ffffff;
 	filter:none;
 	border: none; 
 	padding-left: 0;
@@ -593,11 +593,11 @@ Header and header elements.
 	/*font-weight: 500;*/
 /*}*/
 .header .navbar-nav li ul li a:hover{
-	color:#4c0d7f!important;
+	color:#208135!important;
 	padding: 0;
 }
 .header .navbar-nav li a {
-	color: #fff;
+	color: #333;
 	font-size: 15px;
 	font-weight: 400;
 	text-shadow: none;
@@ -636,7 +636,7 @@ Header and header elements.
 }
 .header .nav li.active > a{
 	color: #fff;
-	background: #6b24a5!important;
+	background: #208135!important;
 }
 .header ul.nav {
 	float: left;
@@ -1007,7 +1007,7 @@ Header and header elements.
 	}
 	.header .nav li.active > a{
 		background: none!important;
-		color:#4c0d7f!important;
+		color:#208135!important;
 	}
 }
 

@@ -105,7 +105,7 @@ em,i {
    display: block;
 }
 .swiper-pagination-bullet-active{
-    background: #4c0d7f;
+    background: #208135;
 }
 .apply-tit{
     margin: 60px 0 20px 0;
@@ -136,7 +136,7 @@ em,i {
 .apply-tit label{
     width: 40px;
     height:2px;
-    background: #4c0d7f;
+    background: #208135;
     display: block;
     margin: 30px auto;
 }
@@ -162,7 +162,7 @@ em,i {
     line-height: 16px;
     font-weight: bold;
     padding: 12px 28px;
-    color: #4c0d7f;
+    color: #208135;
     border-radius: 2px;
     cursor: pointer;
     margin: 0 20px;
@@ -170,7 +170,7 @@ em,i {
     transition: all ease .2s;
 }
 .teacher-tab span.cur {
-    background: #4c0d7f;
+    background: #208135;
     color: #fff;
 }
 .teacher-more{
@@ -179,7 +179,7 @@ em,i {
     margin-bottom: 50px;
 }
 .teacher-more a{
-    color: #4c0d7f;
+    color: #208135;
     font-size: 16px;
 }
 .teacher-group{
@@ -238,14 +238,14 @@ em,i {
     text-align: center;
 }
 .teac-block .else p span{
-    color:#4c0d7f;
+    color:#208135;
     margin-left: 3px;
 }
 .swiper-container1 .swiper-pagination,.swiper-container2 .swiper-pagination,.swiper-container3 .swiper-pagination{
     bottom: -30px!important;
 }
 .swiper-pagination-bullet-active{
-    background:#4c0d7f!important;
+    background:#208135!important;
 }
 .swiper-container1  .swiper-button-prev ,.swiper-container2  .swiper-button-prev{
     background-image: url(../images/slide-le.png);
@@ -391,7 +391,7 @@ em,i {
 .apply-ser .ser-box label{
     width: 10px;
     height:2px;
-    background:#4c0d7f;
+    background:#208135;
     display: block;
     margin: 10px auto;
 }
@@ -463,7 +463,7 @@ em,i {
 }
 .offer .offer-box .offer-infor .major label{
     margin-right: 5px;
-    color:#4c0d7f
+    color:#208135
 }
 .offer .offer-box .result{
     margin-top: 30px;
@@ -574,13 +574,13 @@ em,i {
     display: block;
     margin: 0 auto;
     margin-bottom: 30px;
-    border: 1px solid #4c0d7f;
+    border: 1px solid #208135;
     width: 150px;
     height: 42px;
     line-height: 42px;
     text-align: center;
     border-radius: 30px;
-    color: #4c0d7f;
+    color: #208135;
     font-size: 16px;
 }
 .uni-case .more{
@@ -761,7 +761,7 @@ em,i {
 }
 .right-bar .tool-bar li:hover span{
     display: block;
-    color:#4c0d7f;
+    color:#208135;
     text-align: center;
 }
 .right-bar .tool-bar #top-btn{
@@ -833,7 +833,7 @@ em,i {
     margin-left: -16px;
 }
 .uni-goods .goods-tab ul li.active{
-    background: #4c0d7f;
+    background: #208135;
     color:#fff
 }
 .goods-content{
@@ -878,9 +878,9 @@ em,i {
 .company-part1 ul{
     width: 100%;
     background: #fff;
-    /*background: -webkit-gradient(linear,left top, right top,from(#4c0d7f),to(#8f49c9));*/
-    /*background: -webkit-linear-gradient(left,#4c0d7f,#8f49c9);*/
-    /*background: linear-gradient(90deg,#4c0d7f,#8f49c9);*/
+    /*background: -webkit-gradient(linear,left top, right top,from(#208135),to(#8f49c9));*/
+    /*background: -webkit-linear-gradient(left,#208135,#8f49c9);*/
+    /*background: linear-gradient(90deg,#208135,#8f49c9);*/
 }
 .company-part1 ul li {
     font-size: 14px;
@@ -965,9 +965,9 @@ em,i {
     background: linear-gradient(90deg,#ffab3e,#fff2c7);
 }
 .company-part5 ul:before{
-    background: -webkit-gradient(linear,left top, right top,from(#4c0d7f),to(#8f49c9));
-    background: -webkit-linear-gradient(left,#4c0d7f,#8f49c9);
-    background: linear-gradient(90deg,#4c0d7f,#8f49c9);
+    background: -webkit-gradient(linear,left top, right top,from(#208135),to(#8f49c9));
+    background: -webkit-linear-gradient(left,#208135,#8f49c9);
+    background: linear-gradient(90deg,#208135,#8f49c9);
 }
 .part-animate ul li {
     color: #4a5e72;
@@ -993,8 +993,8 @@ em,i {
 .part-animate ul li.last-btn-box a {
     border-radius: 4px;
     display: block;
-    color: #4c0d7f;
-    border: 1px solid #4c0d7f;
+    color: #208135;
+    border: 1px solid #208135;
     padding: 13px 10px;
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -1009,7 +1009,7 @@ em,i {
     line-height: 36px;
     border-radius: 40px;
     text-align: center;
-    background: #4c0d7f;
+    background: #208135;
     color: #fff;
     display: inline-block;
     cursor: pointer;
@@ -1018,11 +1018,11 @@ em,i {
 }
 .part-animate ul li.last-btn-box button.cart{
     background: none;
-    border: 1px solid #4c0d7f;
-    color: #4c0d7f;
+    border: 1px solid #208135;
+    color: #208135;
 }
 .part-animate ul li.last-btn-box a:hover{
-    background: #4c0d7f;
+    background: #208135;
     color:#fff
 }
 .part-animate ul li h2 {
@@ -1059,8 +1059,8 @@ em,i {
     box-shadow: 0 0 16px 0 hsla(0,0%,77%,.5);
 }
 .example .more{
-    border:1px solid #4c0d7f;
-    color:#4c0d7f;
+    border:1px solid #208135;
+    color:#208135;
 }
 .example .offer-box .offer-infor .choose-ser span{
     background: #f7f7f7;
@@ -1091,7 +1091,7 @@ em,i {
     position: absolute;
     right: 10px;
     top:16px;
-    color:#4c0d7f;
+    color:#208135;
     font-size: 12px;
 }
 .example .offer-box .teacher a:hover{
@@ -1359,8 +1359,8 @@ em,i {
 .apply-word .buy .buy-btn{
     margin-left: 20px;
     display: inline-block;
-    border: 1px solid #4c0d7f;
-    background:#4c0d7f; ;
+    border: 1px solid #208135;
+    background:#208135; ;
     width: 150px;
     height: 42px;
     line-height: 42px;
@@ -1488,7 +1488,7 @@ em,i {
     margin: 0 5px;
 }
 .economic-box .more{
-    color:#4c0d7f;
+    color:#208135;
     font-size: 14px;
     display: block;
     margin: 20px auto;
@@ -1508,7 +1508,7 @@ em,i {
     line-height:36px;
     border-radius: 40px;
     text-align: center;
-    background:#4c0d7f;
+    background:#208135;
     color:#fff;
     display: inline-block;
     cursor: pointer;
@@ -1516,8 +1516,8 @@ em,i {
 }
 .economic-box .cart{
     background: none;
-    border:1px solid #4c0d7f;
-    color:#4c0d7f
+    border:1px solid #208135;
+    color:#208135
 }
 .economic-box .buy:hover{
     text-decoration: underline;
@@ -1539,25 +1539,25 @@ em,i {
     width: calc(33.33% - 40px);
     margin: 0 20px;
     float: left;
-    border: 1px solid #4c0d7f;
+    border: 1px solid #208135;
     border-radius: 3px;
     padding: 15px 15px;
     box-sizing: border-box;
     cursor: pointer;
 }
 .five-ser ul li h2{
-    color:#4c0d7f;
+    color:#208135;
     text-align: center;
     margin: 10px 0;
     font-size: 26px;
 }
 .five-ser ul li p{
-    color:#4c0d7f!important;
+    color:#208135!important;
     text-align: center;
     font-size: 16px;
 }
 .five-ser ul li.active{
-    background: #4c0d7f;
+    background: #208135;
 }
 .five-ser ul li.active h2,.five-ser ul li.active p{
     color: #ffffff !important;
@@ -1613,7 +1613,7 @@ em,i {
 }
 .teachers .teacher-box{
     border: 1px #ccc solid;
-    border-top: 3px #4c0d7f solid;
+    border-top: 3px #208135 solid;
     box-shadow: 0 2px 2px rgba(204,204,204,0.3);
     min-height: 250px;
     width: 100%;
@@ -1644,7 +1644,7 @@ em,i {
     height: 10px;
 }
 .teachers .teacher-box .box-img{
-    border: 3px #4c0d7f solid;
+    border: 3px #208135 solid;
     position: absolute;
     left: 50px;
     top: -75px;
@@ -1662,12 +1662,12 @@ em,i {
     top: -40px;
 }
 .teachers .teacher-box .box-head h2{
-    color:#4c0d7f;
+    color:#208135;
     font-size: 20px;
     margin-bottom: 20px;
 }
 .teachers .teacher-box .box-head p{
-    color:#4c0d7f;
+    color:#208135;
     font-size: 14px;
     line-height: 1.8;
 }
@@ -1768,7 +1768,7 @@ em,i {
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
-    color: #4c0d7f;
+    color: #208135;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -2020,7 +2020,7 @@ em,i {
     top:5px;
     border:none;
     background: none;
-    color:#4c0d7f;
+    color:#208135;
     font-size: 14px;
     outline: none;
 }
@@ -2052,7 +2052,7 @@ em,i {
     cursor: pointer;
 }
 .mk ul.kinds li a.current {
-    background: #6b24a5;
+    background: #208135;
     padding: 2px 8px;
     text-align: center;
     color: #FFF;
@@ -2063,7 +2063,7 @@ em,i {
     text-decoration: none;
 }
 .mk ul.kinds li a:hover {
-    color: #4c0d7f;
+    color: #208135;
 }
 .mk ul.kinds li a {
     color: #666666;
@@ -2161,7 +2161,7 @@ em,i {
     margin-bottom: 12px;
 }
 .comment-body .comment-group h2 label{
-    color: #4c0d7f;
+    color: #208135;
 }
 .comment-body .comment-group p{
     line-height: 1.7;
@@ -2318,7 +2318,7 @@ em,i {
     font-size: 14px;
 }
 .teacher-list-body .sorting ul li a.active {
-    background: #6b24a5;
+    background: #208135;
     color: #fff;
     border-radius: 2px;
 }
@@ -2407,7 +2407,7 @@ em,i {
     margin-bottom: 5px;
 }
 .course-list-con .course-list .myself h2 span{
-    color: #4c0d7f;
+    color: #208135;
     font-size: 14px;
     margin-left: 10px;
 }
@@ -2498,7 +2498,7 @@ em,i {
 .person-do a.order{
     display: block;
     border-radius: 2px;
-    background: #4c0d7f;
+    background: #208135;
     text-align: center;
     padding: 10px 0;
     color:#fff;
@@ -2605,7 +2605,7 @@ em,i {
     position: absolute;
     right: 0;
     top:0;
-    background: #4c0d7f;
+    background: #208135;
     padding: 5px 15px;
     color:#fff;
     font-size: 14px;
@@ -2800,7 +2800,7 @@ em,i {
     opacity: 0.4;
 }
 .goods-dialog .title{
-    color:#6b24a5;
+    color:#208135;
     font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
@@ -2810,7 +2810,7 @@ em,i {
     padding-bottom: 30px;
 }
 .dialog-body .group-tit{
-    color:#6b24a5;
+    color:#208135;
     font-size: 20px;
     position: relative;
     margin-bottom: 20px;
@@ -2819,7 +2819,7 @@ em,i {
 .dialog-body .group-tit:before{
     width: 6px;
     height: 6px;
-    background: #6b24a5;
+    background: #208135;
     border-radius: 100%;
     content: '';
     left: -4px;
@@ -2838,7 +2838,7 @@ em,i {
     width: 100%;
 }
 .dialog-body .group-content h2{
-    color: #6b24a5;
+    color: #208135;
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -2867,7 +2867,7 @@ em,i {
 .dialog-body .group-content p:before{
     width: 6px;
     height: 6px;
-    background: #6b24a5;
+    background: #208135;
     border-radius: 100%;
     content: '';
     left: 0;
@@ -2962,7 +2962,7 @@ em,i {
     margin-top: 30px;
 }
 .fill-form .eqs a.rule {
-    color: #4c0d7f;
+    color: #208135;
 }
 .fill-form button.submit{
     color: #fff;
@@ -3115,7 +3115,7 @@ em,i {
     line-height: 1.8;
 }
 .fill-upload .sm p a{
-    color:#4c0d7f;
+    color:#208135;
     font-size: 14px;
 }
 .fill-upload .sm p label{

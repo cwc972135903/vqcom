@@ -201,7 +201,7 @@ font.must{
 	color:#333!important;
 	}
 .bluefont{
-	color:#4c0d7f!important;
+	color:#208135!important;
 	}
 .bfont{
 	color:#0070d2!important;
@@ -549,8 +549,8 @@ div.scott {
 }
 
 div.scott a {
-	border: 1px solid #6b24a5;
-	color: #6b24a5;
+	border: 1px solid #208135;
+	color: #208135;
 	margin-right: 2px;
 	padding: 3px;
 	text-decoration: none;
@@ -569,8 +569,8 @@ div.scott a:active {
 }
 
 div.scott span.current {
-	background-color: #6b24a5;
-	border: 1px solid #6b24a5;
+	background-color: #208135;
+	border: 1px solid #208135;
 	color: #fff;
 	font-weight: bold;
 	margin-right: 2px;
