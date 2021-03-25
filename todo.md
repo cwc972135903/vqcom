@@ -4,7 +4,7 @@
  * @Author: wenchao.chai
  * @Date: 2021-03-25 12:35:18
  * @LastEditors: wenchao.chai
- * @LastEditTime: 2021-03-25 17:42:09
+ * @LastEditTime: 2021-03-25 17:46:13
 -->
 # 菜单隐藏
 # 主题颜色更换
@@ -15,6 +15,7 @@
 # 立即咨询 立即购买相关的需要隐藏
 # offerview staffview
 # 导师那边数据暂时没有
+# 在线咨询需要去调
 
 # 动态数据部分：需要前端请求后端，后端伪造referer，返回数据了
 
