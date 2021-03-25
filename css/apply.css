@@ -3784,9 +3784,9 @@ em,i {
     .wenshu-mine .apply-tit p,.wenshu-mine .apply-tit i{
         color:#848484;
     }
-    #newBridge{
+    /* #newBridge{
         display: none!important;
-    }
+    } */
     .part-animate ul li{
         padding: 5px!important;
         font-size: 12px;
