@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content=“ApplyUniv”/>
+    <meta name="description" content=“ApplyUniv”/>
+    <title>帮助中心-Apply Univ唯奇教育</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="http://www.v7edu.com:8011/images/favicon.ico" type="image/x-icon" />
+    <link rel="Bookmark" href="http://www.v7edu.com:8011/images/favicon.ico" />
+    <link href="css/slicknav.css" rel="stylesheet" type="text/css"/>
+    <link href="css/apply.css?v=1.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="font/iconfont.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+    <script src="js/apply/jquery.slicknav.js" type="text/javascript"></script>
+    <!-- 校验js -->
+    <script src="js/jquery-validation-1.17.0/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery-validation-1.17.0/dist/localization/messages_zh.js" charset="UTF-8" ></script>
+    <link href="js/jquery-validation-1.17.0/demo/css/cmxform.css" rel="stylesheet" type="text/css">
+    <!-- 引入layer插件 -->
+    <script src="static/layer-v3.1.0/layer/layer.js"></script>
+    <script src="static/layDate-v5.0.8/laydate/laydate.js"></script>
+    <script src="static/common/jeeplus.js"></script>
+    <script src="static/common/common.js?v=2"></script>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+	<meta name="description" content="IPVUL" />
+	<meta name="keywords" content="IPVUL" />
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link href="css/help.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+	<script src="static/bigautocomplete/jquery.bigautocomplete.js" type="text/javascript"></script>
+	<link href="static/bigautocomplete/jquery.bigautocomplete.css" rel="stylesheet" type="text/css">
+    <script>
+        $(function(){
+            var down = $("#h_menu ul.mainlist li i");
+            var inner =$("#h_menu ul.mainlist li ul");
+            $("#h_menu .mainlist li.liu").click(function(){
+                console.log($(this).height());
+                if($(this).find("i").hasClass("icon-you2")){
+                    $(this).find("i").removeClass("icon-you2").addClass("icon-weibiaoti35");
+                    $(this).find("i").parents("li").find("ul").stop().animate({"max-height":"500px"},500)
+                }else{
+                    $(this).find("i").removeClass("icon-weibiaoti35").addClass("icon-you2");
+                    $(this).find("i").parents("li").find("ul").stop().animate({"max-height":0},500)
+                }
+            });
+            $(".inner-ul li a").each(function(){
+                $this = $(this);
+                if($this[0].href==String(window.location)){
+                    $(this).parents(".liu").find("i").removeClass("icon-you2").addClass("icon-weibiaoti35");
+                    $(this).parents(".inner-ul").stop().animate({"max-height":"500px"},100)
+                    $this.addClass("bluefont");
+                }
+            });
+			$("#sinput").bigAutocomplete({
+				url: "/searchHelp.json",
+				click: 'true',
+				select: true,
+				callback: function (data) {
+					$("#scode").val(data.scode);
+				}
+			});
+        })
+		
+		function search() {
+			var sinput = $("#sinput").val();
+        	if(sinput==null||sinput==""){
+				bugObtainCheckLayerAlertDiv("请输入您要搜索的关键字");
+				return;
+			}
+
+        	var scode = $("#scode").val();
+        	if(scode==null||scode==""){
+				bugObtainCheckLayerAlertDiv("输入关键字选择列表中的问题");
+        		return;
+			}
+
+			window.location.href="/help_"+scode+"..html";
+		}
+    </script>
+
+
+
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 200) {
+                    $("#top-btn").fadeIn();
+                }
+                else {
+                    $("#top-btn").hide();
+                }
+            });
+            $("#top-btn").click(function () {
+                $('html,body').animate({'scrollTop': 0}, 500);
+            });
+            $("#code").mouseover(function () {
+                $(".right-bar").stop().css({"width":"200px"});
+                $(".right-bar .code-img").css({"display":"flex"});
+            })
+            $("#code").mouseleave(function () {
+                $(".right-bar").stop().css({"width":"58px"});
+                $(".right-bar .code-img").hide();
+            })
+            if($(window).width() < 768){
+                $('.apply-tit h2').find('br').remove();
+                $('.apply-tit p').find('br').remove();
+            }
+            //点击按钮时判断 百度商桥代码中的“我要咨询”按钮的元素是否存在，存在的话就执行一次点击事件
+            $(".shangqiao").click(function(event) {
+                console.log("iun");
+                if ($('#nb_invite_ok').length > 0) {
+                    $('#nb_invite_ok').click();
+                }
+            });
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?89ec31a5baeef75c01d058c975b7085f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+
+
+<!-- 头部-->
+
+
+
+
+
+
+<!-- END GLOBAL MANDATORY STYLES -->
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style-responsive.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<style>
+    .fixed{
+        position: fixed!important;
+        top: -52px;
+        left:0;
+        right:0;
+        z-index: 1000;
+    }
+</style>
+<script>
+    $(function(){
+        $(".navbar-nav li a").each(function(){
+            $this = $(this);
+            if($this[0].href==String(window.location)){
+                $this.parent('li').addClass("active");
+            }
+        });
+        $(".has-login").click(function(){
+            if($(this).hasClass('open')){
+                $(this).removeClass('open');
+                $(this).find('img.icon').attr('src','/images/menber-open.png');
+                $(this).find('ul').animate({"max-height":0},500)
+            }
+            else{
+                $(this).addClass('open');
+                $(this).find('img.icon').attr('src','/images/menber-close.png')
+                $(this).find('ul').animate({"max-height":"200px"},500)
+            }
+        })
+        var _width = $(window).width();
+        if(_width < 768){
+            $("#cancelNav").attr("href","javascript:void(0);");
+            $("#cancelNav").click(function () {
+                $("#childUl").toggle();
+            })
+        }
+    });
+
+    $().ready(function(){
+        
+    });
+    //导航栏固定
+    $(function(){
+        //标示动画是否执行
+        var isAnimated = false;
+        //on() 添加监听  "所要监听的事件" function(){}当监听到事件后执行的方法
+        $(window).on("scroll",function(){
+            //this代表window scrollTop()向上滑动的距离
+            if($(this).scrollTop() > 90){
+                console.log("enter");
+                $(".navbar").addClass("fixed");
+                //如果动画执行过
+                if(!isAnimated){
+                    $(".navbar").css("top","-52px");//每次要执行动画之前都将top值设为-40px
+                    $(".navbar").animate({"top":"0px"},1000);
+                    isAnimated = true;
+                }
+            }else{
+                console.log("no");
+                isAnimated = false;
+                $(".navbar").removeClass("fixed");
+            }
+        })
+
+    });
+    
+    function doSearchTeacher() {
+        var teacherkey = $("#teacherkey").val();
+        if(teacherkey==null||teacherkey==""){
+            alert("请输入导师名称！");
+            return;
+        }
+
+    }
+</script>
+<div class="header navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <button class="navbar-toggle btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <!-- BEGIN LOGO (you can use logo image instead of text)-->
+            <a class="navbar-brand logo-v1" href="index.html">
+                <img src="images/logo.png" id="logoimg" alt="">
+            </a>
+            <!-- END LOGO -->
+        </div>
+
+        <!-- BEGIN TOP NAVIGATION MENU -->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown"><a class="dropdown-toggle mini" href="allStaff.html">文书服务</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="applySer.html">半DIY申请</a></li>
+                <!-- <li class="dropdown"><a class="dropdown-toggle" href="allSer.html">全程服务</a></li>-->
+                <li class="dropdown"><a class="dropdown-toggle" href="javascript:void(0);">案例评价</a>
+                    <ul>
+                        <li><a href="staffList.html">文书范文</a></li>
+                        <li><a href="offerList.html">OFFER榜</a></li>
+
+                        <li><a href="commentList.html">用户评价</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" href="javascript:void(0);">导师团队</a>
+                    <ul>
+                        <li><a href="staffTeacher.html?search_eq_iteachertype=0.html">文书导师</a></li>
+                        <li><a href="staffTeacher.html?search_eq_iteachertype=1.html">留学生导师</a></li>
+                    </ul>
+                </li>
+               <!--  <li class="dropdown"><a class="dropdown-toggle" href="javascript:void(0);">帮助中心</a>
+                    <ul>
+                        <li><a href="help_P000181.html">服务条款</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </li>-->
+            </ul>
+
+
+
+
+            <!-- <div class="nav-btn">
+                
+                
+                    <a class="btns login" href="login.html">登录</a>
+                    <a class="btns reg" href="register.html">注册</a>
+                
+            </div>-->
+        </div>
+        <!-- BEGIN TOP NAVIGATION MENU -->
+    </div>
+</div>
+<script src="js/apply/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="js/apply/bootstrap.min.js" type="text/javascript"></script>
+
+
+
+<!-- 中间logo及菜单-->
+
+
+
+
+
+
+<div class="commentList">
+	<div class="container">
+		<h2>常见问题</h2>
+	</div>
+</div>
+<div id="h_container">
+    <div class="wid">
+        <div id="h_content" class="clearfix">
+            <!-- 左边菜单 -->
+            <div id="h_menu">
+				<div class="h_menu-all">全部目录<img src="images/help-all-icon.png"></div>
+                <ul class="mainlist">
+                	
+                		
+                			
+                				<li class="liu icon icon-details">服务条款<i class="icon icon-you2"></i>
+	                				<ul class="inner-ul">
+		                				
+		                					<li><a href="help_P000181.html" title="使用服务">使用服务</a></li>
+		                				
+		                					<li><a href="help_P000211.html" title="账户">账户</a></li>
+		                				
+		                					<li><a href="help_P000212.html" title="您应该提供的信息">您应该提供的信息</a></li>
+		                				
+		                					<li><a href="help_P000214.html" title="隐私与版权保护">隐私与版权保护</a></li>
+		                				
+		                					<li><a href="help_P000215.html" title="修改和终止服务及服务反馈">修改和终止服务及服务反馈</a></li>
+		                				
+		                					<li><a href="help_P000216.html" title="关于本条款">关于本条款</a></li>
+		                				
+		                			</ul>
+	                			</li>
+                			
+                			
+                		
+                	
+            </div>
+            <!--右边 -->
+            <div id="h_main">
+            	<div class="main_con">
+					<div class="h_tit">帮助中心<span>  > 服务条款  > 账户</span></div>
+                	<div class="h_step top30">
+                		<p><span style="color: rgb(0, 0, 0); font-size: 18px;"><strong>账户</strong></span></p><p style="margin-top:16px">1. 为了使用我们的服务，您需要首先注册一个ApplyUniv账户。</p><p style="margin-top:16px">2. 为保护您的ApplyUniv账户，请务必保管好您的密码并对外保密。您应对自己ApplyUniv账户上发生的活动或通过该账户进行的活动负责。</p><p style="margin-top:16px">3. 尽量不要在第三方应用中使用与ApplyUniv帐户相同的密码。如果您发现有人在未经授权的情况下使用了您的密码或ApplyUniv帐户，请及时联系管理员。</p><p style="margin-top:16px">4. 您在购买服务过程中的一切支付行为都将在您所选择的第三方支付网站或网上银行完成。ApplyUniv网站及工作人员不会询问、更无法记录您的支付账户密码，请妥善保护您自己的账户安全。</p><p style="margin-top:16px"><br/></p><p style="margin-top: 16px; white-space: normal; text-align: right;"><img width="100px" src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/uploadimage/20191126/b0d8e203-e89c-4ebe-b1a3-c5c6eaf4608d.png" title="upfile" alt="code2.png"/></p><p style="white-space: normal; text-align: right;">Apply Univ唯奇教育</p><p><br/></p>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 尾部-->
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="logo">
+                    <img class="logo" src="images/logo-gray.png">
+                    <p class="bg"><img src="images/qq-icon.png">客服QQ:2201289398</p>
+                    <p><img src="images/phone-icon.png">400-175-2175</p>
+                    <p><img src="images/email-icon.png">info@ApplyUniv.com</p>
+                    <p><img src="images/address-icon.png">上海市黄浦区黄陂北路227号中区广场3楼</p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <div class="quick-link clearfix">
+                    <div class="group">
+                        <ul>
+                            <li>服务</li>
+                            <li><a href="allStaff.html">文书服务</a></li>
+                            <li><a href="applySer.html">DIY申请服务</a></li>
+                            <li><a href="allSer.html">全程服务</a></li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <ul>
+                            <li>案例评价</li>
+                            <li><a href="staffList.html">文书范文</a></li>
+                            <li><a href="offerList.html">OFFER榜</a></li>
+
+                            <li><a href="commentList.html">用户评价</a></li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <ul>
+                            <li>帮助中心</li>
+                            <li><a href="help_P000181.html">服务条款</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <ul>
+                            <li>关注我们</li>
+                        </ul>
+                        <div class="code">
+                            <p>
+                                <img src="images/code1.png">
+                                <span>微信订阅号</span>
+                            </p>
+                            <p>
+                                <img src="images/code2.png">
+                                <span>微信客服</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copy-right">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <div class="pay-img">
+                    <img src="images/pay-img1.png">
+                    <img src="images/pay-img2.png">
+                    <img src="images/pay-img3.png">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                <div class="copy-word">版权所有 ©上海乔雷教育科技有限公司 2014-2016|保留一切权利|沪ICP备16005069号</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="right-bar">
+    <ul class="tool-bar">
+        <li>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2201289398&site=qq&menu=yes"><span>QQ咨询</span></a>
+            <img src="images/tool-icon5.png">
+        </li>
+        <li id="code">
+            <span>微信客服</span>
+            <img src="images/tool-icon1.png">
+        </li>
+        <!-- <li>
+            <a href="help_P000181.html">
+                <span>帮助中心</span>
+                <img src="images/tool-icon2.png">
+            </a>
+        </li> -->
+        <li id="top-btn">
+            <span>返回顶部</span>
+            <img src="images/tool-icon4.png">
+        </li>
+    </ul>
+    <div class="code-img">
+        <img src="images/code2.png">
+        <p>微信客服</p>
+    </div>
+
+</div>
+</body>
+</html>

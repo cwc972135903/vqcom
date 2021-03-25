@@ -1,0 +1,1295 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content=“ApplyUniv”/>
+    <meta name="description" content=“ApplyUniv”/>
+    <title>申请服务-唯奇教育</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="http://www.v7edu.com:8011/images/favicon.ico" type="image/x-icon" />
+    <link rel="Bookmark" href="http://www.v7edu.com:8011/images/favicon.ico" />
+    <link href="css/slicknav.css" rel="stylesheet" type="text/css"/>
+    <link href="css/apply.css?v=1.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="font/iconfont.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+    <script src="js/apply/jquery.slicknav.js" type="text/javascript"></script>
+    <!-- 校验js -->
+    <script src="js/jquery-validation-1.17.0/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery-validation-1.17.0/dist/localization/messages_zh.js" charset="UTF-8" ></script>
+    <link href="js/jquery-validation-1.17.0/demo/css/cmxform.css" rel="stylesheet" type="text/css">
+    <!-- 引入layer插件 -->
+    <script src="static/layer-v3.1.0/layer/layer.js"></script>
+    <script src="static/layDate-v5.0.8/laydate/laydate.js"></script>
+    <script src="static/common/jeeplus.js"></script>
+    <script src="static/common/common.js?v=2"></script>
+    
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="data-spm" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="keywords" content=“ApplyUniv”/>
+<meta name="description" content=“ApplyUniv”/>
+
+<link rel="stylesheet" href="css/swiper.min.css">
+<script>
+    $(function () {
+        $("#close").click(function(){
+            $(".goods-dialog").animate({"top":"100%"},500);
+        });
+        $("#close2").click(function(){
+
+            $(".goods-dialog2").animate({"top":"100%"},500);
+        })
+    })
+    function dialog(){
+        $(".goods-dialog").animate({"top":"0"},500);
+    }
+    function dialog2(){
+        console.log("jll");
+        $(".goods-dialog2").animate({"top":"0"},500);
+    }
+
+//    $(function(){
+//        // 获取 被访问时的 url
+//        var ur =location.href;
+//        // 获取该url  = 后面的数字 （id）
+//        var type=ur.split('?')[1].split("=")[1];
+//        console.log("好"+type);
+//        $('.apply-moudle .apply-tab li').removeClass('active');
+//        $('.apply-moudle .apply-tab li').eq(type-1).addClass('active');
+//        $('.apply-content .apply-word').removeClass('display');
+//        $('.apply-content .apply-word').eq(type-1).addClass('display');
+//        $(".apply-moudle .apply-tab li").click(function(){
+//            var index=$(this).index();
+//            $(this).addClass('active').siblings().removeClass('active');
+//            $('.apply-content .apply-word').removeClass('display');
+//            $('.apply-content .apply-word').eq(index).addClass('display');
+//        });
+//    });
+
+</script>
+
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 200) {
+                    $("#top-btn").fadeIn();
+                }
+                else {
+                    $("#top-btn").hide();
+                }
+            });
+            $("#top-btn").click(function () {
+                $('html,body').animate({'scrollTop': 0}, 500);
+            });
+            $("#code").mouseover(function () {
+                $(".right-bar").stop().css({"width":"200px"});
+                $(".right-bar .code-img").css({"display":"flex"});
+            })
+            $("#code").mouseleave(function () {
+                $(".right-bar").stop().css({"width":"58px"});
+                $(".right-bar .code-img").hide();
+            })
+            if($(window).width() < 768){
+                $('.apply-tit h2').find('br').remove();
+                $('.apply-tit p').find('br').remove();
+            }
+            //点击按钮时判断 百度商桥代码中的“我要咨询”按钮的元素是否存在，存在的话就执行一次点击事件
+            $(".shangqiao").click(function(event) {
+                console.log("iun");
+                if ($('#nb_invite_ok').length > 0) {
+                    $('#nb_invite_ok').click();
+                }
+            });
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?89ec31a5baeef75c01d058c975b7085f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+
+
+
+
+<!-- 头部-->
+
+
+
+
+
+
+<!-- END GLOBAL MANDATORY STYLES -->
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style-responsive.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<style>
+    .fixed{
+        position: fixed!important;
+        top: -52px;
+        left:0;
+        right:0;
+        z-index: 1000;
+    }
+</style>
+<script>
+    $(function(){
+        $(".navbar-nav li a").each(function(){
+            $this = $(this);
+            if($this[0].href==String(window.location)){
+                $this.parent('li').addClass("active");
+            }
+        });
+        $(".has-login").click(function(){
+            if($(this).hasClass('open')){
+                $(this).removeClass('open');
+                $(this).find('img.icon').attr('src','/images/menber-open.png');
+                $(this).find('ul').animate({"max-height":0},500)
+            }
+            else{
+                $(this).addClass('open');
+                $(this).find('img.icon').attr('src','/images/menber-close.png')
+                $(this).find('ul').animate({"max-height":"200px"},500)
+            }
+        })
+        var _width = $(window).width();
+        if(_width < 768){
+            $("#cancelNav").attr("href","javascript:void(0);");
+            $("#cancelNav").click(function () {
+                $("#childUl").toggle();
+            })
+        }
+    });
+
+    $().ready(function(){
+        
+    });
+    //导航栏固定
+    $(function(){
+        //标示动画是否执行
+        var isAnimated = false;
+        //on() 添加监听  "所要监听的事件" function(){}当监听到事件后执行的方法
+        $(window).on("scroll",function(){
+            //this代表window scrollTop()向上滑动的距离
+            if($(this).scrollTop() > 90){
+                console.log("enter");
+                $(".navbar").addClass("fixed");
+                //如果动画执行过
+                if(!isAnimated){
+                    $(".navbar").css("top","-52px");//每次要执行动画之前都将top值设为-40px
+                    $(".navbar").animate({"top":"0px"},1000);
+                    isAnimated = true;
+                }
+            }else{
+                console.log("no");
+                isAnimated = false;
+                $(".navbar").removeClass("fixed");
+            }
+        })
+
+    });
+    
+    function doSearchTeacher() {
+        var teacherkey = $("#teacherkey").val();
+        if(teacherkey==null||teacherkey==""){
+            alert("请输入导师名称！");
+            return;
+        }
+
+    }
+</script>
+<div class="header navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <button class="navbar-toggle btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <!-- BEGIN LOGO (you can use logo image instead of text)-->
+            <a class="navbar-brand logo-v1" href="index.html">
+                <img src="images/logo.png" id="logoimg" alt="">
+            </a>
+            <!-- END LOGO -->
+        </div>
+
+        <!-- BEGIN TOP NAVIGATION MENU -->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown"><a class="dropdown-toggle mini" href="allStaff.html">文书服务</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="applySer.html">半DIY申请</a></li>
+                <!-- <li class="dropdown"><a class="dropdown-toggle" href="allSer.html">全程服务</a></li>-->
+                <li class="dropdown"><a class="dropdown-toggle" href="javascript:void(0);">案例评价</a>
+                    <ul>
+                        <li><a href="staffList.html">文书范文</a></li>
+                        <li><a href="offerList.html">OFFER榜</a></li>
+
+                        <li><a href="commentList.html">用户评价</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" href="javascript:void(0);">导师团队</a>
+                    <ul>
+                        <li><a href="staffTeacher.html?search_eq_iteachertype=0.html">文书导师</a></li>
+                        <li><a href="staffTeacher.html?search_eq_iteachertype=1.html">留学生导师</a></li>
+                    </ul>
+                </li>
+               <!--  <li class="dropdown"><a class="dropdown-toggle" href="javascript:void(0);">帮助中心</a>
+                    <ul>
+                        <li><a href="help_P000181.html">服务条款</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </li>-->
+            </ul>
+
+
+
+
+            <!-- <div class="nav-btn">
+                
+                
+                    <a class="btns login" href="login.html">登录</a>
+                    <a class="btns reg" href="register.html">注册</a>
+                
+            </div>-->
+        </div>
+        <!-- BEGIN TOP NAVIGATION MENU -->
+    </div>
+</div>
+<script src="js/apply/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="js/apply/bootstrap.min.js" type="text/javascript"></script>
+
+
+
+<!-- 中间logo及菜单-->
+
+
+
+
+
+
+<div class="common-ban">
+    <img src="images/applySer-ban1.jpg">
+</div>
+<div class="fiveTo chapter cp4">
+    <div class="why">
+        <h1 class="font-7">DIY</h1>
+        <h2 class="font-8 why-text"><i class="icon"></i>中外导师三对一指导   为申请保驾护航</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="five-box">
+                    <div class="five-box-card">
+                        <div class="top">
+                            <p>名校学长学姐</p>
+                            <p>一对一服务</p>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li>
+                                <h2><img src="images/bingo.png">申请背景相似</h2>
+                            </li>
+                            <li>
+                                <h2><img src="images/bingo.png">申请方向相同</h2>
+                            </li>
+                            <li>
+                                <h2><img src="images/bingo.png">无限次交流指导</h2>
+                            </li>
+                            <li>
+                                <h2><img src="images/bingo.png">助力申请无忧</h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="five-box">
+                    <div class="five-box-card">
+                        <div class="top">
+                            <p>外籍文书导师</p>
+                            <p>互动修改文书</p>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li>
+                                <h2><img src="images/bingo.png">名校外籍导师</h2>
+                            </li>
+                            <li>
+                                <h2><img src="images/bingo.png">互动交流修改</h2>
+                            </li>
+                            <li>
+                                <h2><img src="images/bingo.png">提升文书质量</h2>
+                            </li>
+                            <li>
+                                <h2><img src="images/bingo.png">突出申请优势</h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="five-box">
+                    <div class="five-box-card">
+                        <div class="top">
+                            <p>资深留学顾问</p>
+                            <p>全程贴心跟进</p>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li>
+                                <h2><img src="images/bingo.png">资深经验辅导</h2>
+                            </li>
+                            <li>
+                                <h2><img src="images/bingo.png">贴近学生需求</h2>
+                            </li>
+                            <li>
+                                <h2><img src="images/bingo.png">鼓励式服务</h2>
+                            </li>
+                            <li>
+                                <h2><img src="images/bingo.png">全程监督指导</h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uni-goods uni-goods1" id="unigoods">
+    <div class="container">
+        <div class="apply-tit">
+            <h2>半DIY申请服务</h2>
+            <p>100+名校学长学姐与200+外籍导师，无限次交流指</p>
+            <p>个性化出具解决方案，服务成果看得见</p>
+        </div>
+        <div class="goods-content">
+            <div class="goods-list display">
+                <div class="economic-box">
+                    <img src="images/economic-icon1.png">
+                    <h2>申请无忧计划</h2>
+                    <p>全程咨询+全套文书修改 中外导师三对一指导，保障申请无忧！</p>
+                    <div class="shuom"><label>服务价格</label>¥<span>13800元起</span></div>
+                    <a class="more" href="javascript:void(0);" onclick="dialog()">查看服务详情&nbsp;></a>
+                    <div class="btns">
+                        <a class="buy shangqiao" href="javascript:void(0);">立即咨询</a>
+                    </div>
+                </div>
+                <div class="economic-box">
+                    <img src="images/economic-icon1.png">
+                    <h2>文书定制计划</h2>
+                    <p>全套文书是深度定制，学长学姐与外籍导师共同服务，解决申请核心难题！</p>
+                    <div class="shuom"><label>服务价格</label>¥<span>9990元起</span></div>
+                    <a class="more" href="javascript:void(0);" onclick="dialog2()" >查看服务详情&nbsp;></a>
+                    <div class="btns">
+                        <a class="buy shangqiao" href="javascript:void(0);">立即咨询</a>
+                    </div>
+                </div>
+                <div class="economic-box">
+                    <img src="images/economic-icon1.png">
+                    <h2>学长学姐咨询</h2>
+                    <p>留学生导师一对一交流，答疑解惑，分享申请经验！</p>
+                    <div class="shuom"><label>服务价格</label>¥<span>399元起</span></div>
+                    <a class="more" target="_blank"  href="8aa501826ccb9754016ccbbc2029000b/applySerDetial.html">查看服务详情&nbsp;></a>
+                    <div class="btns">
+                        <a class="buy shangqiao" href="javascript:void(0);">立即咨询</a>
+                    </div>
+                </div>
+                <div class="economic-box">
+                    <img src="images/economic-icon1.png">
+                    <h2>模拟面试</h2>
+                    <p>外籍导师一对一模拟真实面试环境，提供面试技巧与思路！</p>
+                    <div class="shuom"><label>服务价格</label>¥<span>599元起</span></div>
+                    <a class="more" target="_blank" href="8aa501826ccb9754016ccbbb8cd40009/applySerDetial.html" >查看服务详情&nbsp;></a>
+                    <div class="btns">
+                        <a class="buy shangqiao" href="javascript:void(0);">立即咨询</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="teacher">
+    <div class="container">
+        <div class="apply-tit">
+            <h2>平台匹配留学生导师</h2>
+            <p>成功申请到世界名校的留学生导师为您量身定制留学申请解决方案
+            </p>
+        </div>
+        <div class="teacher-con">
+            <div class="teacher-group display">
+                <div class="swiper-container1">
+                    <div class="swiper-wrapper" style="min-height: 100px">
+                        
+                            <div class="swiper-slide">
+                                <div class="teac-block">
+                                    <a href="teacherView.html?id=2c933bc970bae0a20170dd5ab0b60069.html">
+                                        <div class="img">
+                                            
+                                            
+                                                <img src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/memberlogo/20200315/010d14f8-d78e-48c6-acab-4ca01d6baff5.png">
+                                            
+                                        </div>
+                                        <div class="name">Kyna</div>
+                                        
+
+                                        
+                                            <div class="school">剑桥大学</div>
+                                            <div class="else clearfix">
+                                                <p>学位:<span>Master</span></p>
+                                                <p>评分:<span>0.0</span></p>
+                                            </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="teac-block">
+                                    <a href="teacherView.html?id=2c933bc970bae0a20170dd61f680006e.html">
+                                        <div class="img">
+                                            
+                                            
+                                                <img src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/memberlogo/20200402/ec1bc707-90d1-41a1-81dd-cad34b8ee42c.png">
+                                            
+                                        </div>
+                                        <div class="name">CJ</div>
+                                        
+
+                                        
+                                            <div class="school">卡内基梅隆大学</div>
+                                            <div class="else clearfix">
+                                                <p>学位:<span>Master</span></p>
+                                                <p>评分:<span>0.0</span></p>
+                                            </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="teac-block">
+                                    <a href="teacherView.html?id=2c933bc970bae0a20170dcbfc983005f.html">
+                                        <div class="img">
+                                            
+                                            
+                                                <img src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/memberlogo/20200315/25e9410c-32a4-4716-ba63-2e2cd63b0db0.png">
+                                            
+                                        </div>
+                                        <div class="name">Doris</div>
+                                        
+
+                                        
+                                            <div class="school">伦敦政治经济学院</div>
+                                            <div class="else clearfix">
+                                                <p>学位:<span>Master</span></p>
+                                                <p>评分:<span>0.0</span></p>
+                                            </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="teac-block">
+                                    <a href="teacherView.html?id=2c933bc970bae0a20170dc9e3bca003f.html">
+                                        <div class="img">
+                                            
+                                            
+                                                <img src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/memberlogo/20200315/36c62167-d87e-4c4a-932d-75b643746fc1.png">
+                                            
+                                        </div>
+                                        <div class="name">Xishu</div>
+                                        
+
+                                        
+                                            <div class="school">康奈尔大学</div>
+                                            <div class="else clearfix">
+                                                <p>学位:<span>Master</span></p>
+                                                <p>评分:<span>0.0</span></p>
+                                            </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="teac-block">
+                                    <a href="teacherView.html?id=2c933bc96efa91f4016f0878b90b0002.html">
+                                        <div class="img">
+                                            
+                                            
+                                                <img src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/memberlogo/20200315/87c065f2-808e-46eb-853e-9b3197469ab3.png">
+                                            
+                                        </div>
+                                        <div class="name">Jue Wang</div>
+                                        
+
+                                        
+                                            <div class="school">加州大学伯克利分校</div>
+                                            <div class="else clearfix">
+                                                <p>学位:<span>Master</span></p>
+                                                <p>评分:<span>0.0</span></p>
+                                            </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="teac-block">
+                                    <a href="teacherView.html?id=2c933bc970bae0a20170dc74ecfd0023.html">
+                                        <div class="img">
+                                            
+                                            
+                                                <img src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/memberlogo/20200315/cc2b0ef4-c94e-4f65-8a7c-efb1da9b49ae.png">
+                                            
+                                        </div>
+                                        <div class="name">Cynthia</div>
+                                        
+
+                                        
+                                            <div class="school">University College London</div>
+                                            <div class="else clearfix">
+                                                <p>学位:<span>Master</span></p>
+                                                <p>评分:<span>0.0</span></p>
+                                            </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="teac-block">
+                                    <a href="teacherView.html?id=2c933bc970bae0a20170dc6cda18001e.html">
+                                        <div class="img">
+                                            
+                                            
+                                                <img src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/memberlogo/20200315/8549e2ab-9891-475c-b642-dcb087fc78f3.png">
+                                            
+                                        </div>
+                                        <div class="name">Bao Ke</div>
+                                        
+
+                                        
+                                            <div class="school">Georgetown University</div>
+                                            <div class="else clearfix">
+                                                <p>学位:<span>Master</span></p>
+                                                <p>评分:<span>0.0</span></p>
+                                            </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="teac-block">
+                                    <a href="teacherView.html?id=2c933bc970bae0a20170dc952705003a.html">
+                                        <div class="img">
+                                            
+                                            
+                                                <img src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/memberlogo/20200315/d4060465-3cf3-45ec-ac16-cb73cc610ac1.png">
+                                            
+                                        </div>
+                                        <div class="name">Zhong Lin</div>
+                                        
+
+                                        
+                                            <div class="school">剑桥大学</div>
+                                            <div class="else clearfix">
+                                                <p>学位:<span>Master</span></p>
+                                                <p>评分:<span>0.0</span></p>
+                                            </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="teac-block">
+                                    <a href="teacherView.html?id=2c933bc970bae0a20170dc8751910030.html">
+                                        <div class="img">
+                                            
+                                            
+                                                <img src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/memberlogo/20200315/9ebc71d2-ae4a-4fce-a6d2-e4d944dbf4a4.png">
+                                            
+                                        </div>
+                                        <div class="name">Siyi</div>
+                                        
+
+                                        
+                                            <div class="school">南加利福尼亚大学</div>
+                                            <div class="else clearfix">
+                                                <p>学位:<span>Master</span></p>
+                                                <p>评分:<span>0.0</span></p>
+                                            </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="swiper-slide">
+                                <div class="teac-block">
+                                    <a href="teacherView.html?id=2c933bc96fa99fe301701461fdbb005e.html">
+                                        <div class="img">
+                                            
+                                            
+                                                <img src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/memberlogo/20200214/0dbdc184-9fd7-483b-8fa9-7a122c0efb57.jpg">
+                                            
+                                        </div>
+                                        <div class="name">Crystal</div>
+                                        
+
+                                        
+                                            <div class="school">康奈尔大学</div>
+                                            <div class="else clearfix">
+                                                <p>学位:<span>Ph.D.</span></p>
+                                                <p>评分:<span>0.0</span></p>
+                                            </div>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <a class="more" href="staffTeacher.html?search_eq_iteachertype=1.html">查看更多导师</a>
+        </div>
+    </div>
+</div>
+
+<div class="process">
+    <div class="container">
+        <div class="apply-tit">
+            <h2>服务流程</h2>
+        </div>
+        <div class="process-con clearfix">
+            <div class="pro-box">
+                <img src="images/pro-icon1.png">
+                <p>选择服务，填写订单</p>
+            </div>
+            <div class="pro-space"><img src="images/pro-space.png"></div>
+            <div class="pro-box">
+                <img src="images/pro-icon2.png">
+                <p>提交订单，付款</p>
+            </div>
+            <div class="pro-space"><img src="images/pro-space.png"></div>
+            <div class="pro-box">
+                <img src="images/pro-icon3.png">
+                <p>导师接单</p>
+            </div>
+            <div class="pro-space"><img src="images/pro-space.png"></div>
+            <div class="pro-box">
+                <img src="images/pro-icon4.png">
+                <p>服务结束</p>
+            </div>
+            <div class="pro-space"><img src="images/pro-space.png"></div>
+            <div class="pro-box">
+                <img src="images/pro-icon5.png">
+                <p>评价，获得积分</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uni-case offer example">
+    <div class="container">
+        <div class="apply-tit">
+            <h2>服务案例</h2>
+            <p>来自哈佛、耶鲁、牛津等全球顶尖学府的外籍导师</br>为您提供最纯正的英文文书服务</p>
+        </div>
+        <div class="case-con">
+            <div class="row">
+                
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="offerView_2c933bc96fa99fe3016fbb7f05970002.html">
+                            <div class="offer-box">
+                                <div class="offer-infor">
+                                    
+                                     <img class="logo" src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/uploadimage/20200401/8f99ebc8-7dae-4081-9180-96a8b94905a3.png">
+                                    <div class="name">W同学<label>(中国)</label></div>
+                                    <div class="major">软件工程</div>
+                                </div>
+                                <div class="result">
+                                    <h2>申请结果</h2>
+                                    <label></label>
+                                    <p><span>卡内基梅隆大学</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="offerView_2c933bc9703edd530170421c88680000.html">
+                            <div class="offer-box">
+                                <div class="offer-infor">
+                                    
+                                     <img class="logo" src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/uploadimage/20200401/b823b586-ad33-4187-b7a1-59dd8625552f.png">
+                                    <div class="name">H同学<label>(中国)</label></div>
+                                    <div class="major">环境发展</div>
+                                </div>
+                                <div class="result">
+                                    <h2>申请结果</h2>
+                                    <label></label>
+                                    <p><span>曼彻斯特大学</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="offerView_2c933bc9706fc7e101707acb1daa00a9.html">
+                            <div class="offer-box">
+                                <div class="offer-infor">
+                                    
+                                     <img class="logo" src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/uploadimage/20200401/0663e3d6-9c09-4bb9-9c57-a63b19030c78.png">
+                                    <div class="name">J同学<label>(中国)</label></div>
+                                    <div class="major">工商管理</div>
+                                </div>
+                                <div class="result">
+                                    <h2>申请结果</h2>
+                                    <label></label>
+                                    <p><span>法国埃塞克高等商学院</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="offerView_2c933bc9706fc7e101707ad66c9d00aa.html">
+                            <div class="offer-box">
+                                <div class="offer-infor">
+                                    
+                                     <img class="logo" src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/uploadimage/20200401/9b4cf78f-dfde-492a-b052-3c6a1512ee90.png">
+                                    <div class="name">L同学<label>(中国)</label></div>
+                                    <div class="major">教育学</div>
+                                </div>
+                                <div class="result">
+                                    <h2>申请结果</h2>
+                                    <label></label>
+                                    <p><span>伦敦大学学院</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="offerView_2c933bc9706fc7e101707adc8d0400ab.html">
+                            <div class="offer-box">
+                                <div class="offer-infor">
+                                    
+                                     <img class="logo" src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/uploadimage/20200401/0a2a8c6f-d796-4e2c-b8dc-4e65e140fa05.png">
+                                    <div class="name">L同学<label>(中国)</label></div>
+                                    <div class="major">心理学</div>
+                                </div>
+                                <div class="result">
+                                    <h2>申请结果</h2>
+                                    <label></label>
+                                    <p><span>爱丁堡大学</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="offerView_2c933bc9706fc7e101707ade501b00ac.html">
+                            <div class="offer-box">
+                                <div class="offer-infor">
+                                    
+                                     <img class="logo" src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/uploadimage/20200401/9dd2f7b2-8146-42f5-907e-12b0d3a44d9d.png">
+                                    <div class="name">L同学<label>(中国)</label></div>
+                                    <div class="major">心理学</div>
+                                </div>
+                                <div class="result">
+                                    <h2>申请结果</h2>
+                                    <label></label>
+                                    <p><span>南安普顿大学</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="offerView_2c933bc9706fc7e101707ae0555400ad.html">
+                            <div class="offer-box">
+                                <div class="offer-infor">
+                                    
+                                     <img class="logo" src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/uploadimage/20200401/2b3d614b-7f68-4ae2-9bed-6c427d1533ff.png">
+                                    <div class="name">Y同学<label>(中国)</label></div>
+                                    <div class="major">工商管理</div>
+                                </div>
+                                <div class="result">
+                                    <h2>申请结果</h2>
+                                    <label></label>
+                                    <p><span>新加坡管理大学</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <a href="offerView_2c933bc9706fc7e101707ae1eb3c00ae.html">
+                            <div class="offer-box">
+                                <div class="offer-infor">
+                                    
+                                     <img class="logo" src="../new.applyuniv.com/upload/applyuniv/PublicDir/article/uploadimage/20200401/3f79cf8d-f864-43a6-9270-51a4caa86615.png">
+                                    <div class="name">Z同学<label>(中国)</label></div>
+                                    <div class="major">公共管理</div>
+                                </div>
+                                <div class="result">
+                                    <h2>申请结果</h2>
+                                    <label></label>
+                                    <p><span>康奈尔大学</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="row">
+                <a class="more" href="caseList.html">查看更多</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="discuss">
+    <div class="container">
+        <div class="apply-tit">
+            <h2>用户评价</h2>
+            <p>真实用户反馈，为您提供最靠谱的意见参考</p>
+        </div>
+        <div class="discuss-con">
+            <div class="swiper-container3">
+                <div class="swiper-wrapper">
+                    
+                        <div class="swiper-slide">
+                            <div class="discuss-box">
+                                <div class="discuss-head">
+
+
+
+
+
+
+                                    昵称:v
+                                    <div class="name">v</div>
+                                    <div class="teacher">导师:Eric Segal</div>
+                                    <div class="serve">单篇文书修改-申请文书</div>
+                                </div>
+                                <div class="discuss-word">Impressive edits and thank you</div>
+                                <div class="discuss-time"><i class="icon icon-shijian1"></i>2021-01-18 16:15:27</div>
+                            </div>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <div class="discuss-box">
+                                <div class="discuss-head">
+
+
+
+
+
+
+                                    昵称:小纯
+                                    <div class="name">小纯</div>
+                                    <div class="teacher">导师:Mary Dungan</div>
+                                    <div class="serve">单篇文书修改-申请文书</div>
+                                </div>
+                                <div class="discuss-word">Thank you very much!</div>
+                                <div class="discuss-time"><i class="icon icon-shijian1"></i>2020-12-07 21:02:52</div>
+                            </div>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <div class="discuss-box">
+                                <div class="discuss-head">
+
+
+
+
+
+
+                                    昵称:hita
+                                    <div class="name">hita</div>
+                                    <div class="teacher">导师:Sylvie Stacy</div>
+                                    <div class="serve">单篇文书修改-推荐信</div>
+                                </div>
+                                <div class="discuss-word">Thanks for your comments and revision. All things in this letter become wonderful.</div>
+                                <div class="discuss-time"><i class="icon icon-shijian1"></i>2020-10-31 03:15:53</div>
+                            </div>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <div class="discuss-box">
+                                <div class="discuss-head">
+
+
+
+
+
+
+                                    昵称:Claire
+                                    <div class="name"></div>
+                                    <div class="teacher">导师:Alicia Washington</div>
+                                    <div class="serve">单篇文书修改-申请文书</div>
+                                </div>
+                                <div class="discuss-word">整体感觉挺好的，对于我的修改要求也基本上都修改到位了，终稿流畅了许多。</div>
+                                <div class="discuss-time"><i class="icon icon-shijian1"></i>2020-09-21 16:53:50</div>
+                            </div>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <div class="discuss-box">
+                                <div class="discuss-head">
+
+
+
+
+
+
+                                    昵称:TOOOOT0000
+                                    <div class="name">TOOOOT0000</div>
+                                    <div class="teacher">导师:Alicia Washington</div>
+                                    <div class="serve">单篇文书修改-申请文书</div>
+                                </div>
+                                <div class="discuss-word">写作风格比较偏wordy的一个导师，确实丰富了语言和句式，也修改了不符合逻辑的表达，给出的建议也很中肯，不过没有修改太多的专业内容。写在文档备注里面的内容会看，不过在网站上的信息基本不看，相对交流比较少。交回来的稿子里面还有细小的错误，不知道是粗心还是根本就没有仔细再审一遍。</div>
+                                <div class="discuss-time"><i class="icon icon-shijian1"></i>2020-09-21 14:10:56</div>
+                            </div>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <div class="discuss-box">
+                                <div class="discuss-head">
+
+
+
+
+
+
+                                    昵称:sqz0914
+                                    <div class="name"></div>
+                                    <div class="teacher">导师:Eric Segal</div>
+                                    <div class="serve">单篇文书修改-申请文书</div>
+                                </div>
+                                <div class="discuss-word">Very useful edit and suggestions!</div>
+                                <div class="discuss-time"><i class="icon icon-shijian1"></i>2020-09-01 07:48:25</div>
+                            </div>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <div class="discuss-box">
+                                <div class="discuss-head">
+
+
+
+
+
+
+                                    昵称:sqz0914
+                                    <div class="name"></div>
+                                    <div class="teacher">导师:Eric Segal</div>
+                                    <div class="serve">单篇文书修改-推荐信</div>
+                                </div>
+                                <div class="discuss-word">Very helpful editing and suggestions!</div>
+                                <div class="discuss-time"><i class="icon icon-shijian1"></i>2020-07-27 21:42:56</div>
+                            </div>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <div class="discuss-box">
+                                <div class="discuss-head">
+
+
+
+
+
+
+                                    昵称:Rick
+                                    <div class="name">Rick</div>
+                                    <div class="teacher">导师:Mary Dungan</div>
+                                    <div class="serve">单篇文书修改-申请文书</div>
+                                </div>
+                                <div class="discuss-word">Mary is always kind and professional. In addition to polishing up the language, she also gave me very helpful advice on how to write a good PS. Thanks a lot!</div>
+                                <div class="discuss-time"><i class="icon icon-shijian1"></i>2020-07-06 16:24:58</div>
+                            </div>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <div class="discuss-box">
+                                <div class="discuss-head">
+
+
+
+
+
+
+                                    昵称:
+                                    <div class="name"></div>
+                                    <div class="teacher">导师:Eric Segal</div>
+                                    <div class="serve">单篇文书修改-申请文书</div>
+                                </div>
+                                <div class="discuss-word">Very professional and helpful edit. Thanks!</div>
+                                <div class="discuss-time"><i class="icon icon-shijian1"></i>2020-05-13 13:44:05</div>
+                            </div>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <div class="discuss-box">
+                                <div class="discuss-head">
+
+
+
+
+
+
+                                    昵称:屋顶上的轻骑兵
+                                    <div class="name">屋顶上的轻骑兵</div>
+                                    <div class="teacher">导师:Eric Segal</div>
+                                    <div class="serve">单篇文书修改-申请文书</div>
+                                </div>
+                                <div class="discuss-word">Eric is so nice and patient. He also provided some useful suggestions on the contents of my essay. I am very satisfied with his modification and help!</div>
+                                <div class="discuss-time"><i class="icon icon-shijian1"></i>2020-04-28 10:07:03</div>
+                            </div>
+                        </div>
+                    
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="row">
+            <a class="more" href="commentList.html">查看更多评论</a>
+        </div>
+    </div>
+</div>
+<div class="goods-dialog">
+    <div class="close" id="close">关闭</div>
+    <img src="images/newpic1.jpeg.jpg" width="100%" />
+</div>
+<div class="goods-dialog2">
+    <div class="close" id="close2">关闭</div>
+    <img src="images/newpic2.jpeg.jpg" width="100%" />
+</div>
+<script src="js/swiper.min.js"></script>
+<script>
+    var _width = $(window).width();
+    if(_width > 768){
+        var swiper1 = new Swiper('.swiper-container1', {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+            autoplayDisableOnInteraction : false,
+            pagination: {
+                el: '.swiper-container1 .swiper-pagination',
+                clickable: true,
+            },
+            direction: 'horizontal',
+            loop: true,
+            onTouchMove: function(swiper){
+                if(swiper.activeIndex == 1){
+                    swiper.lockSwipeToPrev();
+                }else{
+                    swiper.unlockSwipeToPrev();
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-container1 .swiper-button-next',
+                prevEl: '.swiper-container1 .swiper-button-prev',
+            }
+        });
+        var swiper3 = new Swiper('.swiper-container3', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-container3 .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-container3 .swiper-button-next',
+                prevEl: '.swiper-container3 .swiper-button-prev',
+            },
+        });
+    }else{
+        var swiper1 = new Swiper('.swiper-container1', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+            autoplayDisableOnInteraction : false,
+            pagination: {
+                el: '.swiper-container1 .swiper-pagination',
+                clickable: true,
+            },
+            direction: 'horizontal',
+            loop: true,
+            onTouchMove: function(swiper){
+                if(swiper.activeIndex == 1){
+                    swiper.lockSwipeToPrev();
+                }else{
+                    swiper.unlockSwipeToPrev();
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-container1 .swiper-button-next',
+                prevEl: '.swiper-container1 .swiper-button-prev',
+            }
+        });
+        var swiper3 = new Swiper('.swiper-container3', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-container3 .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-container3 .swiper-button-next',
+                prevEl: '.swiper-container3 .swiper-button-prev',
+            },
+        });
+    }
+
+</script>
+
+<!-- 尾部-->
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="logo">
+                    <img class="logo" src="images/logo-gray.png">
+                    <p class="bg"><img src="images/qq-icon.png">客服QQ:2201289398</p>
+                    <p><img src="images/phone-icon.png">400-175-2175</p>
+                    <p><img src="images/email-icon.png">info@ApplyUniv.com</p>
+                    <p><img src="images/address-icon.png">上海市黄浦区黄陂北路227号中区广场3楼</p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <div class="quick-link clearfix">
+                    <div class="group">
+                        <ul>
+                            <li>服务</li>
+                            <li><a href="allStaff.html">文书服务</a></li>
+                            <li><a href="applySer.html">DIY申请服务</a></li>
+                            <li><a href="allSer.html">全程服务</a></li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <ul>
+                            <li>案例评价</li>
+                            <li><a href="staffList.html">文书范文</a></li>
+                            <li><a href="offerList.html">OFFER榜</a></li>
+
+                            <li><a href="commentList.html">用户评价</a></li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <ul>
+                            <li>帮助中心</li>
+                            <li><a href="help_P000181.html">服务条款</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <ul>
+                            <li>关注我们</li>
+                        </ul>
+                        <div class="code">
+                            <p>
+                                <img src="images/code1.png">
+                                <span>微信订阅号</span>
+                            </p>
+                            <p>
+                                <img src="images/code2.png">
+                                <span>微信客服</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copy-right">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <div class="pay-img">
+                    <img src="images/pay-img1.png">
+                    <img src="images/pay-img2.png">
+                    <img src="images/pay-img3.png">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                <div class="copy-word">版权所有 ©上海乔雷教育科技有限公司 2014-2016|保留一切权利|沪ICP备16005069号</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="right-bar">
+    <ul class="tool-bar">
+        <li>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2201289398&site=qq&menu=yes"><span>QQ咨询</span></a>
+            <img src="images/tool-icon5.png">
+        </li>
+        <li id="code">
+            <span>微信客服</span>
+            <img src="images/tool-icon1.png">
+        </li>
+        <!-- <li>
+            <a href="help_P000181.html">
+                <span>帮助中心</span>
+                <img src="images/tool-icon2.png">
+            </a>
+        </li> -->
+        <li id="top-btn">
+            <span>返回顶部</span>
+            <img src="images/tool-icon4.png">
+        </li>
+    </ul>
+    <div class="code-img">
+        <img src="images/code2.png">
+        <p>微信客服</p>
+    </div>
+
+</div>
+</body>
+</html>
