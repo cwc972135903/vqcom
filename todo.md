@@ -4,7 +4,7 @@
  * @Author: wenchao.chai
  * @Date: 2021-03-25 12:35:18
  * @LastEditors: wenchao.chai
- * @LastEditTime: 2021-03-25 17:46:13
+ * @LastEditTime: 2021-03-26 16:06:57
 -->
 # 菜单隐藏
 # 主题颜色更换
@@ -16,6 +16,8 @@
 # offerview staffview
 # 导师那边数据暂时没有
 # 在线咨询需要去调
+# 发布的时候需要修改ip地址
+# 公司地址和备案信息需要修改
 
 # 动态数据部分：需要前端请求后端，后端伪造referer，返回数据了
 
