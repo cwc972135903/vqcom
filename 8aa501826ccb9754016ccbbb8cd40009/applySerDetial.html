@@ -63,7 +63,9 @@
     
     <link rel="stylesheet" href="../css/directionReveal.css">
     <script>
-        $(function(){
+        $(function(){ setTimeout(function(){
+            $("#newBridge").css("display", "none");
+        },200)
             $(".part-animate ul").mouseenter(function(){
                 $(this).addClass('active');
                 $(this).parents('.part-animate').siblings().find('ul').removeClass('active')
@@ -166,7 +168,9 @@
     }
 </style>
 <script>
-    $(function(){
+    $(function(){ setTimeout(function(){
+            $("#newBridge").css("display", "none");
+        },200)
         $(".navbar-nav li a").each(function(){
             $this = $(this);
             if($this[0].href==String(window.location)){
@@ -198,7 +202,9 @@
         
     });
     //导航栏固定
-    $(function(){
+    $(function(){ setTimeout(function(){
+            $("#newBridge").css("display", "none");
+        },200)
         //标示动画是否执行
         var isAnimated = false;
         //on() 添加监听  "所要监听的事件" function(){}当监听到事件后执行的方法
@@ -250,9 +256,9 @@
 
         <!-- BEGIN TOP NAVIGATION MENU -->
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" style="margin-top:20px;">
                 <li class="dropdown"><a class="dropdown-toggle mini" href="../allStaff.html">文书服务</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" href="../applySer.html">半DIY申请</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="../applySer.html">一站式留学申请服务</a></li>
                 <!-- <li class="dropdown"><a class="dropdown-toggle" href="../allSer.html">全程服务</a></li> -->
                 <li class="dropdown"><a class="dropdown-toggle" href="javascript:void(0);">案例评价</a>
                     <ul>

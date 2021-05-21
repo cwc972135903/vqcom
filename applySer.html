@@ -51,7 +51,9 @@
         $(".goods-dialog2").animate({"top":"0"},500);
     }
 
-//    $(function(){
+//    $(function(){ setTimeout(function(){
+            $("#newBridge").css("display", "none");
+        },200)
 //        // 获取 被访问时的 url
 //        var ur =location.href;
 //        // 获取该url  = 后面的数字 （id）
@@ -141,7 +143,9 @@
     }
 </style>
 <script>
-    $(function(){
+    $(function(){ setTimeout(function(){
+            $("#newBridge").css("display", "none");
+        },200)
         $(".navbar-nav li a").each(function(){
             $this = $(this);
             if($this[0].href==String(window.location)){
@@ -173,7 +177,9 @@
         
     });
     //导航栏固定
-    $(function(){
+    $(function(){ setTimeout(function(){
+            $("#newBridge").css("display", "none");
+        },200)
         //标示动画是否执行
         var isAnimated = false;
         //on() 添加监听  "所要监听的事件" function(){}当监听到事件后执行的方法
@@ -218,16 +224,16 @@
             <!-- END RESPONSIVE MENU TOGGLER -->
             <!-- BEGIN LOGO (you can use logo image instead of text)-->
             <a class="navbar-brand logo-v1" href="index.html">
-              <img src="images/logovq.png" width="130" height="50" id="logoimg" alt="">
+              <img src="images/logovq.png" height="85" id="logoimg" alt="">
             </a>
             <!-- END LOGO -->
         </div>
 
         <!-- BEGIN TOP NAVIGATION MENU -->
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="dropdown"><a class="dropdown-toggle mini" href="allStaff.html">文书服务</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" href="applySer.html">半DIY申请</a></li>
+            <ul class="nav navbar-nav" style="margin-top:20px;">
+                <li class="dropdown"><a class="dropdown-toggle mini" href="index.html">首页</a></li><li class="dropdown"><a class="dropdown-toggle mini" href="allStaff.html">文书服务</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="applySer.html">一站式留学申请服务</a></li><li class="dropdown"><a class="dropdown-toggle" href="#">国际游学</a></li><li class="dropdown"><a class="dropdown-toggle" href="#l">留学考试</a></li><li class="dropdown"><a class="dropdown-toggle" href="#">国际课程培训</a></li>
                 <!-- <li class="dropdown"><a class="dropdown-toggle" href="allSer.html">全程服务</a></li>-->
                 <li class="dropdown"><a class="dropdown-toggle" href="javascript:void(0);">案例评价</a>
                     <ul>
@@ -368,7 +374,7 @@
 <div class="uni-goods uni-goods1" id="unigoods">
     <div class="container">
         <div class="apply-tit">
-            <h2>半DIY申请服务</h2>
+            <h2>一站式留学申请服务服务</h2>
             <p>100+名校学长学姐与200+外籍导师，无限次交流指</p>
             <p>个性化出具解决方案，服务成果看得见</p>
         </div>
